@@ -20,7 +20,7 @@
   },
   "scripts": {
     "css-deploy": "npm run css-build && npm run css-postcss",
-    "css-build": "node-sass _sass/main.scss css/main.css",
+    "css-build": "node-sass _sass/light.scss css/light.css && node-sass _sass/dark.scss css/dark.css",
     "css-postcss": "postcss --use autoprefixer --output css/main.css css/main.css",
     "css-watch": "npm run css-build -- --watch",
     "deploy": "npm run css-deploy && npm run js-build",
